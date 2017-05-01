@@ -47,31 +47,38 @@ Usage: rfid_app [OPTION]...
 
 Detect rfid hardware:
 ```./rfid_app -l
-Found device: ID card reader & writer6```
+Found device: ID card reader & writer6
+```
 
 ```./p1d_rfid -l
-Found P1D device with firmware version: 208```
+Found P1D device with firmware version: 208
+```
 
 Reading a tag (default hex output):
 ```./rfid_app -r
-0F0021BC9B```
+0F0021BC9B
+```
 
 Reading a tag (spaced hex output):
 ```./rfid_app -r -f 1```
 
 Reading a tag (decimal output):
 ```./rfid_app -r -f 2
-0002210971```
+0002210971
+```
 
 Reading a tag (2H+4H decimal output):
 ```./rfid_app -r -f 4
-033,48283```
+033,48283
+```
 
 Writing a tag:
 ```./rfid_app -w 0F0021BC9B
-0F0021BC9B```
+0F0021BC9B
+```
 
 Writing to an incompatible tag:
 ```./p1d_rfid -w 0F0021BC9B
-NOTAG```
+NOTAG
+```
 
