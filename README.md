@@ -33,6 +33,7 @@ make install - for installing the idrw_linux udev rules file
 Usage
 =====
 
+```bash
 ./rfid_app
 rfid_app version 1.0, Copyright (c) 2014 Benjamin Larsson <benjamin@southpole.se>
 Usage: rfid_app [OPTION]...
@@ -42,34 +43,35 @@ Usage: rfid_app [OPTION]...
 	 -d tty device to connect to (/dev/ttyUSB0 default)
 	 -w [10 char hex string] write data to tag/fob
 	 -b don't beep while accessing tag/fob, might affect some tags
+```
 
 Detect rfid hardware:
-./rfid_app -l
-Found device: ID card reader & writer6
+```./rfid_app -l
+Found device: ID card reader & writer6```
 
-./p1d_rfid -l
-Found P1D device with firmware version: 208
+```./p1d_rfid -l
+Found P1D device with firmware version: 208```
 
 Reading a tag (default hex output):
-./rfid_app -r
-0F0021BC9B
+```./rfid_app -r
+0F0021BC9B```
 
 Reading a tag (spaced hex output):
-./rfid_app -r -f 1
+```./rfid_app -r -f 1```
 
 Reading a tag (decimal output):
-./rfid_app -r -f 2
-0002210971
+```./rfid_app -r -f 2
+0002210971```
 
 Reading a tag (2H+4H decimal output):
-./rfid_app -r -f 4
-033,48283
+```./rfid_app -r -f 4
+033,48283```
 
 Writing a tag:
-./rfid_app -w 0F0021BC9B
-0F0021BC9B
+```./rfid_app -w 0F0021BC9B
+0F0021BC9B```
 
 Writing to an incompatible tag:
-./p1d_rfid -w 0F0021BC9B
-NOTAG
+```./p1d_rfid -w 0F0021BC9B
+NOTAG```
 
