@@ -4,10 +4,12 @@ rfid_app
 Linux command line tool for China 125kHz rfid reader/writer (RFID_APP_EN)
 
 ## install
+
 ```bash
 wget -c https://github.com/BrunIF/rfid_app/releases/download/v.1.0/rfid_app -O rfid
 chmod +x ./rfid
-sudo cp rfid /usr/bin/```
+sudo cp rfid /usr/bin/
+```
 
 p1d_rfid
 ========
